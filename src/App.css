@@ -1,38 +1,214 @@
-.App {
-  text-align: center;
+body{
+  font-family: 'poppins';
+  overflow: hidden;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button:hover{
+  cursor: pointer;
 }
+.land_div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1182px;
+  height: 80vh;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
+.dices{
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.inf_btn{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-end;
+}
+#name{
+  font-size: 96px;
+  text-wrap: nowrap;
+  margin-bottom: 20px;
+}
+#line{
+  border-top: 3px solid black;
+  border-radius: 5px;
+  margin: 30px auto;
+  width: 70%;
+}
+#label{
+  font-weight: 600;
+}
+#mode_select{
+  margin: 30px 0px 15px;
+  padding: 10px 20px;
+  font-weight: 600;
+  min-width: 130px;
+  cursor: pointer;
+}
+#play_btn{
+  font-weight: 700;
+  background-color: black;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 5px;
   color: white;
+  transition: 0.4s all ease-in;
+  min-width: 130px;
+}
+#play_btn:hover{
+  cursor: pointer;
+  transition: 0.4s all ease-out;
+  background-color: transparent;
+  color: black;
+  border-color: black;
+}
+.top{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.score h1{
+  margin: 0px;
+  font-size: 85px;
+}
+.score p{
+  margin-top: 0px;
+}
+.num_selector{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.num_selector .not_selected{
+  color: red;
+  position: absolute;
+  transform: translate(0px,-3px);
+  display: none;
+}
+.num_selector .text{
+  justify-items: flex-end;
+  font-size: 24px;
+  font-weight: bold;
+}
+.nums{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+ 
+}
+.num{
+  padding: 10px 15px;
+  border: solid 2px black;
+  /* border-radius: 5px; */
+  height: fit-content;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.34s all ease-in-out;
+  flex-grow: 1;
+}
+.num:hover{
+  cursor: pointer;
+}
+div.nums>.selected{
+  background-color: black;
+  color: white;
+  transition: 0.34s all ease-in-out;
+}
+.center{
+  width: 250px;
+  
+  /* padding: 10px; */
+  margin: 0 auto;
+}
+.center p,div{
+  padding: 0px 11px;
+}
+.center p{
+  font-size: 23px;
+  text-wrap: nowrap;
+  margin: 10px auto 15px;
+}
+.center img{
+  height: 230px;
+  width: 230px;
+}
+.center img:hover{
+  cursor: pointer;
+}
+.btns{
+  margin: 0px;
+  padding: 0px;
+}
+.center .btns button{
+  background-color: black;
+  color: white;
+  width: -webkit-fill-available;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 200;
+  border-radius: 5px;
+  border: solid 2px transparent;
+}
+#reset{
+  background-color: white;
+  border-color: black;
+  color: black;
+  margin-bottom: 15px;
+}
+.bottom{
+  background-color: #FBF1F1;
+  margin: 10px auto;
+  max-width: fit-content;
+  padding: 15px;
+  border: solid 2px #f4c9c9;
+  display: none;
+  transition: 0.3s display ease-in;
+}
+.bottom h2{
+  margin: 20px;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.rolling {
+  animation: roll 1s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes roll {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  25% {
+    transform: rotateX(90deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotateX(180deg) rotateY(90deg);
+  }
+  75% {
+    transform: rotateX(270deg) rotateY(180deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(270deg);
+  }
+}
+@media  (max-width: 780px) {
+.top{
+  flex-direction: column;
+}
+*{
+  text-align: center;
+}
+#rules li{
+  text-align: left;
+}
+.text{
+  margin-bottom: 16px;
+}
+}
+@media  (max-width: 1199px) {
+  .land_div .dices img{
+    width: calc(1rem + 3vw);
+
   }
 }
