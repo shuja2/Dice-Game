@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Dice-Game.git/static/css/main.16def32d.css",
-    "main.js": "/Dice-Game.git/static/js/main.bf27d40f.js",
-    "static/js/453.d838f528.chunk.js": "/Dice-Game.git/static/js/453.d838f528.chunk.js",
-    "index.html": "/Dice-Game.git/index.html",
-    "main.16def32d.css.map": "/Dice-Game.git/static/css/main.16def32d.css.map",
-    "main.bf27d40f.js.map": "/Dice-Game.git/static/js/main.bf27d40f.js.map",
-    "453.d838f528.chunk.js.map": "/Dice-Game.git/static/js/453.d838f528.chunk.js.map"
+    "main.css": "/Dice-Game/static/css/main.16def32d.css",
+    "main.js": "/Dice-Game/static/js/main.47e1cd73.js",
+    "static/js/453.d838f528.chunk.js": "/Dice-Game/static/js/453.d838f528.chunk.js",
+    "index.html": "/Dice-Game/index.html",
+    "main.16def32d.css.map": "/Dice-Game/static/css/main.16def32d.css.map",
+    "main.47e1cd73.js.map": "/Dice-Game/static/js/main.47e1cd73.js.map",
+    "453.d838f528.chunk.js.map": "/Dice-Game/static/js/453.d838f528.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.16def32d.css",
-    "static/js/main.bf27d40f.js"
+    "static/js/main.47e1cd73.js"
   ]
 }
