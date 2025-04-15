@@ -93,7 +93,7 @@ button:hover{
 }
 .nums{
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 10px;
   justify-content: space-between;
  
@@ -205,10 +205,4 @@ div.nums>.selected{
 .text{
   margin-bottom: 16px;
 }
-}
-@media  (max-width: 1199px) {
-  .land_div .dices img{
-    width: calc(1rem + 3vw);
-
-  }
 }

@@ -107,7 +107,7 @@ const Playing = ({
         <div className="dice">
           <img
             id="dic"
-            src={`/images/dice_${randomNum}.png`}
+            src={`./images/dice_${randomNum}.png`}
             alt="Dice 1"
             onClick={handleRolling}
           />

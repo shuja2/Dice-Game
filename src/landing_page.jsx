@@ -5,7 +5,7 @@ const Landing_page = ({handle_play,level, setLevel}) => {
     <main>
       <div className="land_div">
         <div className="dices">
-          <img src="/images/dices.png" alt="dices" />
+          <img src="./images/dices.png" alt="dices" />
         </div>
         <div className="inf_btn">
           <h1 id="name">Dice Game</h1>
