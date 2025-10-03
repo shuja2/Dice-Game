@@ -1,7 +1,7 @@
 {
   "name": "dice_game",
   "version": "0.1.0",
-  
+  "homepage": "https://shuja2.github.io/Dice-Game",
   "description": "A simple dice game built with React.",
   "private": true,
   "dependencies": {
