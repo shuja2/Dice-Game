@@ -79,9 +79,5 @@ const randomGen = (min, max, lev, selected) => {
 function rand_bool() {
   return Math.floor(Math.random() * 2);
 }
-// for (let index = 0; index < 15; index++) {
-//   console.log(`${Math.floor(Math.random()*2)}   : ${rand_bool()}` );
 
-// }
-// console.log();
 export default App;

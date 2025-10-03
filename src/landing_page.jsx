@@ -1,27 +1,43 @@
 import React from "react";
 
-const Landing_page = ({handle_play,level, setLevel}) => {
+const LandingPage = ({ handle_play, level, setLevel }) => {
   return (
-    <main>
-      <div className="land_div">
-        <div className="dices">
-          <img src="./images/dices.png" alt="dices" />
+    <main className="landing-main">
+      <div className="landing-container">
+        <div className="dices-container">
+          <img
+            src="./images/dices.png"
+            alt="Dice illustration"
+            className="dices-image"
+          />
         </div>
-        <div className="inf_btn">
-          <h1 id="name">Dice Game</h1>
-          <div id="line"></div>
-          <label htmlFor="mode_select" id="label">Select Difficulty level:</label>
-          <select name="mode_select" id="mode_select" onChange={(e)=>{setLevel(e.target.value);console.log(e.target.value);
-          }} value={level}>
+        <div className="info-button-container">
+          <h1 className="game-title">Dice Game</h1>
+          <div className="divider"></div>
+          <label htmlFor="difficulty-select" className="difficulty-label">
+            Select Difficulty Level:
+          </label>
+          <select
+            name="difficulty"
+            id="difficulty-select"
+            className="difficulty-select"
+            onChange={(e) => {
+              setLevel(e.target.value);
+              console.log(e.target.value);
+            }}
+            value={level}
+          >
             <option value="1">Easy</option>
             <option value="2">Normal</option>
             <option value="3">Difficult</option>
           </select>
-          <button id="play_btn" onClick={handle_play}>Play Now</button>
+          <button className="play-button" onClick={handle_play}>
+            Play Now
+          </button>
         </div>
       </div>
     </main>
   );
 };
 
-export default Landing_page;
+export default LandingPage;
